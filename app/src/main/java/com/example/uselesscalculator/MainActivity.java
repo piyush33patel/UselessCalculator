@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
         execute.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String array[] = input.getText().toString().split(",");
+                String array[] = input.getText().toString().split(" ");
                 int ans = Integer.valueOf(array[0]);
                 for(int i = 1; i < array.length; i++){
                     ans ^= Integer.valueOf(array[i]);
